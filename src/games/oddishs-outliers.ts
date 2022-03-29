@@ -48,9 +48,7 @@ class OddishsOutliers extends ScriptedGame {
 		}
 	}
 
-	onStart(): void {
-		 
-		this.say(text);
+	onStart(): void{
 	}
 
 	generateCups(): void {
