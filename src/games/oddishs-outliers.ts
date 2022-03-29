@@ -97,8 +97,9 @@ class OddishsOutliers extends ScriptedGame {
 				paramNames[i] = "Starts with " + paramNames[i];
 			} else if (params[i].type === 'type') {
 				paramNames[i] += " type";
-			}
-		}
+			} else if (params[i].type === 'move') {
+				paramNames[i] += "learns the move";
+			}	
 
 		const text = "Oddish wants to know a pokemon that: **" + Tools.joinList(paramNames) + "**!";
 		this.on(text, () => {
